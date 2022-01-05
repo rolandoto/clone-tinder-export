@@ -7,8 +7,8 @@ import { WiDayCloudy ,WiMoonWaningCrescent4} from "react-icons/wi";
 
 const ListTinder =({tinder,handNext})=>{
     const {handHistory} = UseHistory()
-    const {setTime,time,setColor,color,setIcon,icon,setHis,his} = useContext(Useprovider)
-    const [mode,setMode] = useState(true)
+    const {setTime,time,setColor,color,setIcon,icon,setHis,his,mode,setMode} = useContext(Useprovider)
+    
 
     const handclickDay =()=>{
             setTime(time == 'day'? 'night' : "day")
