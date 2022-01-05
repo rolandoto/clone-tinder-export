@@ -12,7 +12,7 @@ export const Useprovider  =({children}) =>{
         state:[]
     }  
     const [history,setHistory] =useState(inital)
-
+    const [mode,setMode] = useState(true)
     const [time,setTime] = useState('night')
     const [color,setColor] = useState('nigthIcon')
     const [icon,setIcon] = useState('Iconnigth')
@@ -29,7 +29,9 @@ export const Useprovider  =({children}) =>{
                                 icon,
                                 setIcon,
                                 his,
-                                setHis}} >
+                                setHis,
+                                mode,
+                                setMode}} >
             {children}
         </Context.Provider>
     )
