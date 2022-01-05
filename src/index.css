@@ -19,15 +19,13 @@ body {
 .App {
   display: flex;
   max-width: 500px;
-  max-height: 1100px;
   flex-direction: column;
   overflow: auto;
-  max-height: 1100px;
   width: 100vw;
   border-radius: 48px;
   box-shadow: 0 0 50px rgb(0 0 0 / 40%);
-  height: 110vh;
-   
+  height: 115vh;
+  overflow: scroll;
 }
 
 img {
@@ -55,6 +53,7 @@ img {
   animation: .5s;
   color:rgb(0, 0, 0);
 }
+
 
 .flex-history.day {
   background:#ffffff;
@@ -280,8 +279,6 @@ input {
 }
 
 
-    
-
 .border-degraded {
     color: white;
     display: flex;
@@ -483,4 +480,22 @@ margin: 283px 0 0 0;
     margin-left: 24px;
     padding: 5px;
     border-radius: 17px;
+}
+
+.button-history {
+   background-color: #165ae5;
+    border: none;
+    color: white;
+    padding: 19px 36px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 21px;
+    font-weight: 700;
+    box-shadow: 0 0 28px #165ae5;
+    display: flex;
+    cursor: pointer;
+    margin: auto;
+    display: flex;  
+    margin-top: 11px;
 }

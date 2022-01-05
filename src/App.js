@@ -9,6 +9,7 @@ import { useContext} from 'react';
 import { UseEmailcontext } from './context/UseEmailcontext';
 import PrivateRoute from './privateRoute/privateRoute';
 import { AuthProvider } from './Auth/Auth';
+import User from './Component/User/User';
 
 function App() {
   const {time} = useContext(Useprovider)
@@ -22,6 +23,7 @@ function App() {
                 <Route exact path='/Login' component={Login}  />
                 <PrivateRoute exact path='/HomeTinder' component={HomeTinder}  />
                 <PrivateRoute exact path='/history' component={History}  />
+                <PrivateRoute exact path='/user' component={User}  />
               </Switch>
           </BrowserRouter>
         </UseEmailcontext>

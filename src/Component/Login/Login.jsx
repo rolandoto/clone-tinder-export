@@ -1,37 +1,13 @@
-import React, { useCallback, useContext, useState } from 'react'
-import {useHistory} from 'react-router-dom'
+import React, { useCallback, useContext } from 'react'
 import  UseEmailcontext  from '../../context/UseEmailcontext'
 import  Useprovider  from '../../context/Useproviders'
 import app from '../../firebase/config'
+import UseUsers from '../../hooks/UseUser'
 
-const Login =({history})=>{
+const Login =()=>{
     const {time} = useContext(Useprovider)
     
-    const {setEmail} = useContext(UseEmailcontext)
-   
-    const handleLogin = useCallback(
-    async event => {
-      event.preventDefault();
-      const { email, password } = event.target.elements;
-      try {
-        await app
-          .auth()
-          .signInWithEmailAndPassword(email.value, password.value);
-          setEmail(email.value)
-         
-
-          setTimeout(()=>{
-            history.push("/HomeTinder");
-        },3000)
-      
-      } catch (error) {
-        alert(error);
-       
-      }
-    },
-    [history]
-  );
-
+    const {handleLogin} = UseUsers()
 
     
     return (

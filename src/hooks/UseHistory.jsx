@@ -20,12 +20,17 @@ const UseHistory =()=>{
    const hadTodoDelete =()=>{
         setHistory({...history,
                     state:[]})
+   }
+
+   const back = () =>{
         hist.push('/HomeTinder')
    }
 
    return {handHistory,
             history,
-            hadTodoDelete}
+            hadTodoDelete,
+             back
+            }
 }
 
 export default UseHistory

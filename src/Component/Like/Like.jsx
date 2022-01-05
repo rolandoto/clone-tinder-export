@@ -4,7 +4,7 @@ import Useprovider  from '../../context/Useproviders';
 import UseHistory from '../../hooks/UseHistory';
 
 const Like =({handNext,tinder}) =>{
-    const {color,time} = useContext(Useprovider)
+    const {color} = useContext(Useprovider)
     const {handHistory} = UseHistory()
 
     const handNotFavorite =(vtn) =>{

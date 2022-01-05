@@ -4,14 +4,14 @@ import ListHistory from '../ListHistory/ListHistory';
 import { IoArrowBack } from "react-icons/io5"
 import BarraMenu from '../Barra/BarraMenu';
 import Useprovider  from '../../context/Useproviders';
-import app from '../../firebase/config';
+
 const History  =()=>{
-    const {history,hadTodoDelete} = UseHistory()
+    const {history,back} = UseHistory()
     const {time} = useContext(Useprovider) 
     
     return (
         <div>
-             <span className={`back  ${time}`} onClick={() =>hadTodoDelete()} ><IoArrowBack fontSize={40} /></span>
+            <span className={`back ${time}`} onClick={() =>back()} ><IoArrowBack   fontSize={40} /> </span>
             <div className={`list-history ${time} `}>
                 <ul>
                     <li><h1 className={time}>History</h1></li>
@@ -24,9 +24,9 @@ const History  =()=>{
                 <ListHistory {...hty} />
                 ))}
                 </div>
-                 <button onClick={() => app.auth().signOut()}>Cerrar session</button>
-                <BarraMenu / >
+                
+                <BarraMenu />
         </div>
     )
 }
-export default History
+export  default History
