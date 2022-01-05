@@ -11,3 +11,476 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background: hsla(0, 0%, 0%, 0.274);
+}
+
+.App {
+  display: flex;
+  max-width: 500px;
+  max-height: 1100px;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 1100px;
+  width: 100vw;
+  border-radius: 48px;
+  box-shadow: 0 0 50px rgb(0 0 0 / 40%);
+  height: 110vh;
+   
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+    .Home-Login {
+    top: 93%;
+    height: auto;
+    width: 100vw;
+    border-radius: 39px;
+    text-align: initial;
+    display: flex;
+    max-width: 500px;
+    max-height: 1100px;
+    flex-direction: column;
+    overflow: auto;
+    box-shadow: 0 0 50px rgb(0 0 0 / 40%);
+
+}
+
+.App.day  {
+  background:#f3f3f3;
+  animation: .5s;
+  color:rgb(0, 0, 0);
+}
+
+.flex-history.day {
+  background:#ffffff;
+}
+
+.App.day input {
+  background:#ffffff;
+  animation: .5s;
+  color:rgb(0, 0, 0);
+}
+.barra.day {
+  background:#ffffff;
+  animation: .5s;
+}
+.like-cancel.dayIcon {
+  animation: .5s;
+  color: red;
+}
+
+.Icon {
+  color: #165ae5;
+  animation: .5s;
+}
+
+.history {
+  color: #165ae5;
+}
+
+/*night */
+
+.App.night  {
+  background: #232232;
+  animation: .5s;
+  color:white;
+}
+
+.flex-history.night {
+  background: #2c2b3e;
+}
+
+.App.night input {
+  background: #2c2a40;
+  animation: .5s;
+  color:white;
+}
+.barra.night {
+  background: #413f5a;
+  animation: .5s;
+}
+
+.history-nigth {
+  color: white;
+}
+
+.Icon-nigth {
+  color: #2c2b3e;
+  animation: .5s;
+}
+
+.like-cancel.nigthIcon {
+  animation: .5s;
+  color: white;
+}
+
+.Iconnigth {
+  color: #2c2b3e;
+  animation: .5s;
+}
+    
+li {
+  list-style: none;
+}
+
+.list-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.list-description{
+    font-size: 21px;
+    font-weight: 300;
+    margin-top: 11px;
+    width: 67%;
+}
+
+.button-login{
+    background-color: #165ae5;
+    border: none;
+    color: white;
+    padding: 19px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 21px;
+    font-weight: 700;
+    box-shadow: 0 0 28px #165ae5;
+    display: flex;
+    cursor: pointer;
+}
+
+.button-blue {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    justify-content: flex-start;
+    margin-top: 41px;
+}
+
+.title-welcome {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.list-login-description {
+    display: flex;
+    width: 66%;
+    text-align: end;
+}
+
+.login-contendor {
+     margin: auto;
+    margin-top: 30%;
+}
+
+.form-login form {
+  display: grid;
+    justify-content: initial;
+    margin: auto;
+    width: 63%;
+    margin-top: 10px;
+    height: 107px;
+}
+
+input {
+  
+  border: none;
+  border-radius: 20px;
+  padding: 7px 0 0px 18px;
+  z-index: 1;
+  color: white;
+}
+
+ /* background: #2f2f43;*/
+
+.form-login input {
+    margin-top: 10px;
+    height: 59px;
+}
+
+.title-input-user {
+    position: absolute;
+    margin: 12px 22px;
+    z-index: 1;
+}
+
+.title-input-password {
+    position: absolute;
+    margin: 85px 21px;
+    z-index: 1;
+}
+
+
+.button-Log {
+    background-color: #165ae5;
+    border: none;
+    color: white;
+    padding: 19px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 21px;
+    font-weight: 700;
+    box-shadow: 0 0 28px #165ae5;
+    display: flex;
+    cursor: pointer;
+    margin: auto;
+    display: flex; 
+     margin: inherit;
+     margin-top: 11px;
+} 
+
+.button-Log button {
+  margin-top: 10px;
+}
+
+.password {
+    text-align: initial;
+    margin-top: 12px;
+}
+
+.button-Log button {
+  display: flex;
+  justify-content: end;
+}
+
+.image-tinder  {
+    max-height: 100%;
+    object-fit: cover;
+    height: 66vh;
+     border-radius: 0 0 33px 34px;
+}
+
+
+.title-tinder {
+    color: white;
+    display: flex;
+    margin: 4px 39px 17px 20px;
+  
+}
+
+.image-efect {
+  -webkit-animation: pulse 5s ease  alternate;
+  animation: pulse 5s ease  alternate;
+  -webkit-transition: all 1.1s 0.4s ease;
+    transition: all 1.1s 0.4s ease;
+
+}
+@keyframes pulse {
+    0% {width: 100px;}
+    50% {width: 100%;}
+}
+
+
+    
+
+.border-degraded {
+    color: white;
+    display: flex;
+    margin: -99px 0 0 0;
+    height: 19vh;
+    align-items: self-end;
+    border-radius: 0 0 33px 34px;
+    background: linear-gradient(to top ,rgba(0, 0, 0, 1),rgb(0 0 0),rgb(0 0 0 /-28%));
+    z-index: 0;
+    position: relative;
+}
+
+
+.like ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 32vh;
+    margin: auto;
+    margin-top: 38px;
+}
+
+.like-favorite {
+     background: #165ae5;
+    padding: 16px;
+    border-radius: 43px;
+    box-shadow: 0 0 28px #165ae5;
+    cursor: pointer;
+}
+
+.like-cancel {
+    padding: 16px;
+    border-radius: 43px;
+    box-shadow: 0 0 28px #373764;
+    cursor: pointer;
+}
+
+
+    
+.send-image {
+    max-width: 101%;
+    height: auto;
+    height: 127vh;
+    object-fit: cover;
+}
+
+.like-favorite-send  {
+    background: #165ae5;
+    padding: 16px;
+    border-radius: 43px;
+    box-shadow: 0 0 28px #165ae5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 38px;
+    display: revert;
+    align-items: center;
+}
+
+.send-tinder-single {
+margin: 283px 0 0 0;
+}
+
+.circle {
+  border-radius: 50%;
+    background-color: #165ae5;
+    width: 160px;
+    height: 157px;
+    position: absolute;
+    opacity: 0;
+    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    display: flex;
+    /* animation: auto; */
+    margin: auto;
+    margin: -91px -62px;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
+
+.circle2  {
+  border-radius: 50%;
+    background-color: #165ae5;
+    width: 160px;
+    height: 157px;
+    position: absolute;
+    opacity: 0;
+    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    display: flex;
+    /* animation: auto; */
+    margin: auto;
+    margin: -91px -62px;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .1;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
+
+.image-hisotry {
+   border-radius: 14px;
+    height: 12vh;
+    object-fit: cover;
+    object-position: top;
+    object-position: top;
+    width: 58vh;
+}
+
+
+
+.flex-history{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 68vh;
+    border-radius: 22px;
+    margin-top: 10px;
+}
+
+
+.list-history {
+  text-align: initial;
+    max-width: 49vh;
+    font-size: 18px;
+}
+
+.list-history-flex {
+    display: grid;
+    justify-items: center;
+}
+
+
+.flex-history span {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.back {
+    position: revert;
+    display: flex;
+    cursor: pointer;
+    margin: none;
+    justify-content: space-around;
+    max-width: 106px;
+    top: 10px;
+    margin-top: 13px;
+}
+/* background: #3e3e56; */
+.barra{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 70%;
+    height: 84px;
+    left: 0;
+    position: fixed;
+    max-width: 410px;
+    right: 0;
+    z-index: 1000;
+    bottom: 14px;
+}
+
+.barra li{
+    cursor: pointer;
+}
+.modo-time.night{
+  background: #2c2a40;
+}
+
+.modo-time.day{
+  background: white;
+}
+
+.modo-time {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    max-width: 119px;
+    top: 10px;
+    margin-top: 13px;
+    margin-left: 24px;
+    padding: 5px;
+    border-radius: 17px;
+}
