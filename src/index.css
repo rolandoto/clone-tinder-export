@@ -399,18 +399,18 @@ margin: 283px 0 0 0;
     object-fit: cover;
     object-position: top;
     object-position: top;
-    width: 58vh;
+     width: 79%;;
 }
-
 
 
 .flex-history{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 68vh;
+    width: 85%;
     border-radius: 22px;
     margin-top: 10px;
+    max-width: 100%;
 }
 
 
